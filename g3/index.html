@@ -51,7 +51,11 @@ h1{margin:22px 0 4px;font-size:2.3rem;line-height:1.25;color:var(--ink);text-ali
 .card .p{font-size:1.1rem;color:var(--text);margin-left:12px;flex:1}
 .card svg{width:44px;height:44px;flex:none}
 .foot{margin-top:auto;padding-top:36px;font-size:.95rem;color:#7a6f62;text-align:center}
+.note{margin:8px 0 0;font-size:.7rem;color:#9a9084;text-align:center}
+.note.solo{margin-top:auto;padding-top:36px}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-24X926HVV5"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-24X926HVV5');</script>
 </head>
 <body>
 <main>
@@ -59,8 +63,9 @@ h1{margin:22px 0 4px;font-size:2.3rem;line-height:1.25;color:var(--ink);text-ali
 <h1 class="name serif">香茅</h1>
 <p class="hakka">客語　<b>香茅</b></p>
 <p class="pinyin">hiongˊ mauˇ</p>
-<button class="play" type="button" data-audio="../audio/hiongmau.mp3" aria-label="播放香茅的客語發音"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg><span class="lbl">聽</span></button>
+<button class="play" type="button" data-audio="../audio/hiongmau.mp3" data-id="g3" data-name="香茅" data-kind="word" aria-label="播放香茅的客語發音"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg><span class="lbl">聽</span></button>
 <p class="hint">按一下，聽客語怎麼說</p>
+<p class="note solo">本頁使用 Google Analytics 統計瀏覽次數</p>
 </main>
 <script>
 (function(){
@@ -69,6 +74,7 @@ h1{margin:22px 0 4px;font-size:2.3rem;line-height:1.25;color:var(--ink);text-ali
     var lbl=btn.querySelector('.lbl'),txt=lbl.textContent;
     btn.addEventListener('click',function(){
       a.pause();a.currentTime=0;
+      if(window.gtag){gtag('event','listen_play',{plant_id:btn.getAttribute('data-id'),plant_name:btn.getAttribute('data-name'),audio_kind:btn.getAttribute('data-kind')});}
       var p=a.play();if(p&&p.catch){p.catch(function(){});}
     });
     a.addEventListener('play',function(){btn.classList.add('on');lbl.textContent='播放中';});

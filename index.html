@@ -51,7 +51,11 @@ h1{margin:22px 0 4px;font-size:2.3rem;line-height:1.25;color:var(--ink);text-ali
 .card .p{font-size:1.1rem;color:var(--text);margin-left:12px;flex:1}
 .card svg{width:44px;height:44px;flex:none}
 .foot{margin-top:auto;padding-top:36px;font-size:.95rem;color:#7a6f62;text-align:center}
+.note{margin:8px 0 0;font-size:.7rem;color:#9a9084;text-align:center}
+.note.solo{margin-top:auto;padding-top:36px}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-24X926HVV5"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-24X926HVV5');</script>
 </head>
 <body>
 <main>
@@ -59,22 +63,31 @@ h1{margin:22px 0 4px;font-size:2.3rem;line-height:1.25;color:var(--ink);text-ali
 <p class="sub">按一下植物名，聽客語怎麼說</p>
 <div class="grp">客家五花</div>
 <div class="list">
-<a class="card" href="f1/"><span class="n serif">含笑</span><span class="p">hamˇ seu</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="f2/"><span class="n serif">夜合</span><span class="p">ia hab</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="f3/"><span class="n serif">樹蘭</span><span class="p">su lanˇ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="f4/"><span class="n serif">桂花</span><span class="p">gui faˊ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="f5/"><span class="n serif">新丁花</span><span class="p">xinˊ denˊ faˊ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="f1/" data-id="f1" data-name="含笑"><span class="n serif">含笑</span><span class="p">hamˇ seu</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="f2/" data-id="f2" data-name="夜合"><span class="n serif">夜合</span><span class="p">ia hab</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="f3/" data-id="f3" data-name="樹蘭"><span class="n serif">樹蘭</span><span class="p">su lanˇ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="f4/" data-id="f4" data-name="桂花"><span class="n serif">桂花</span><span class="p">gui faˊ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="f5/" data-id="f5" data-name="新丁花"><span class="n serif">新丁花</span><span class="p">xinˊ denˊ faˊ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
 </div>
 <div class="grp">池上的草木</div>
 <div class="list">
-<a class="card" href="g1/"><span class="n serif">大風草</span><span class="p">tai funˊ coˋ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="g2/"><span class="n serif">抹草</span><span class="p">madˋ coˋ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="g3/"><span class="n serif">香茅</span><span class="p">hiongˊ mauˇ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="g4/"><span class="n serif">艾草</span><span class="p">ngie eˋ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
-<a class="card" href="g5/"><span class="n serif">黃荊</span><span class="p">sanˊ bu giangˊ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="g1/" data-id="g1" data-name="大風草"><span class="n serif">大風草</span><span class="p">tai funˊ coˋ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="g2/" data-id="g2" data-name="抹草"><span class="n serif">抹草</span><span class="p">madˋ coˋ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="g3/" data-id="g3" data-name="香茅"><span class="n serif">香茅</span><span class="p">hiongˊ mauˇ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="g4/" data-id="g4" data-name="艾草"><span class="n serif">艾草</span><span class="p">ngie eˋ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
+<a class="card" href="g5/" data-id="g5" data-name="黃荊"><span class="n serif">黃荊</span><span class="p">sanˊ bu giangˊ</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h10l14-12v40L20 40H10z" fill="currentColor" stroke="none"/><path d="M42 22c4 5 4 15 0 20"/><path d="M50 14c8 9 8 27 0 36"/></svg></a>
 </div>
 <p class="foot">客語發音：石湘蓮老師（四縣腔）</p>
+<p class="note">本頁使用 Google Analytics 統計瀏覽次數</p>
 </main>
-<script></script>
+<script>
+(function(){
+  document.querySelectorAll('a.card').forEach(function(c){
+    c.addEventListener('click',function(){
+      if(window.gtag){gtag('event','select_plant',{plant_id:c.getAttribute('data-id'),plant_name:c.getAttribute('data-name')});}
+    });
+  });
+})();
+</script>
 </body>
 </html>
