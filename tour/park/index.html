@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F4F0E5">
+<title>園區｜池上客庄特色遊程</title>
+<meta name="description" content="池上客庄特色遊程：池上客家文化園區與合作店家的官網、粉專、導航與電話。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#294534;--paper:#F4F0E5;--text:#443D34;--line:#E2D9C8;--card:#FFFDF8}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{font-size:17px}
+body{margin:0;background:var(--paper);color:var(--text);min-height:100vh;
+ font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei","Heiti TC",sans-serif}
+.serif{font-family:"Noto Serif TC","Source Han Serif TC","Songti TC","PMingLiU",serif}
+a{color:inherit}
+.bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:10px;padding:10px 14px;
+ background:rgba(244,240,229,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar .t{flex:1;min-width:0;text-align:center;font-size:1.12rem;font-weight:900;color:var(--ink);letter-spacing:.06em;line-height:1.25}
+html[lang=en] .bar .t{font-size:.98rem;letter-spacing:.01em}
+.ib{flex:none;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+ color:var(--ink);background:var(--card);border:1.5px solid var(--line);text-decoration:none}
+.ib svg{width:22px;height:22px}
+.ib.ghost{visibility:hidden}
+.is-home .bar .t{visibility:hidden}
+.lang{flex:none;min-width:58px;height:44px;padding:0 12px;border-radius:22px;border:1.5px solid var(--ink);background:var(--ink);
+ color:#fff;font-weight:700;font-size:.9rem;letter-spacing:.04em;cursor:pointer;font-family:inherit}
+main{max-width:560px;margin:0 auto;padding:0 16px 28px}
+/* 首頁 */
+.hero{text-align:center;padding:26px 0 0}
+.hero h1{margin:0;font-size:2.15rem;line-height:1.25;font-weight:900;color:var(--ink);letter-spacing:.1em}
+.hero .en{margin:6px 0 0;font-size:.95rem;color:#6E6556;letter-spacing:.03em}
+.hero img{display:block;width:86%;max-width:420px;height:auto;margin:8px auto 4px}
+.tiles{display:grid;gap:14px;margin-top:6px}
+.tile{position:relative;display:block;border-radius:22px;overflow:hidden;text-decoration:none;color:#fff;aspect-ratio:2.25/1;
+ box-shadow:0 6px 18px rgba(41,69,52,.16);background:#ccc}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .sh{position:absolute;inset:0;background:linear-gradient(90deg,var(--c) 0%,var(--c7) 42%,var(--c0) 80%)}
+.tile .lb{position:absolute;left:20px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:12px}
+.tile .ic{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center}
+.tile .ic svg{width:26px;height:26px}
+.tile .nm{font-size:1.9rem;font-weight:900;letter-spacing:.14em;line-height:1.1}
+html[lang=en] .tile .nm{font-size:1.6rem;letter-spacing:.03em}
+html[lang=en] .hero h1{font-size:1.75rem;letter-spacing:.03em}
+.tile .go{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;
+ background:rgba(255,255,255,.9);color:var(--c);display:flex;align-items:center;justify-content:center}
+.tile .go svg{width:20px;height:20px}
+/* 分類頁 */
+.head{display:flex;align-items:center;gap:12px;margin:22px 2px 14px}
+.head .ic{width:46px;height:46px;border-radius:50%;background:var(--c);color:#fff;display:flex;align-items:center;justify-content:center}
+.head .ic svg{width:26px;height:26px}
+.head h2{margin:0;font-size:1.75rem;font-weight:900;color:var(--c);letter-spacing:.14em}
+.stop{background:var(--card);border-radius:22px;overflow:hidden;margin:0 0 16px;box-shadow:0 4px 14px rgba(41,69,52,.10)}
+.ph{position:relative;aspect-ratio:2/1;background:#ddd}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(25,30,24,.72),rgba(25,30,24,0) 58%)}
+.ph .nm{position:absolute;left:16px;right:16px;bottom:13px;z-index:1;display:flex;align-items:center;gap:10px;color:#fff;
+ font-size:1.32rem;font-weight:700;line-height:1.3;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.ph .nm span[data-zh]{white-space:pre-line}
+.ph .no{flex:none;width:30px;height:30px;border-radius:50%;background:var(--c);display:flex;align-items:center;justify-content:center;
+ font-size:.95rem;font-weight:700;font-family:"Noto Sans TC",sans-serif;text-shadow:none}
+.acts{display:flex;justify-content:space-around;padding:14px 10px 16px}
+.act{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+ background:var(--ink);color:#fff;text-decoration:none;box-shadow:0 3px 8px rgba(41,69,52,.22)}
+.act svg{width:26px;height:26px}
+.act:active{transform:scale(.94)}
+.foot{margin:22px 0 0;font-size:.82rem;color:#7a6f62;text-align:center;line-height:1.6}
+.note{margin:4px 0 0;font-size:.68rem;color:#9a9084;text-align:center}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-24X926HVV5"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-24X926HVV5');</script>
+</head>
+<body data-title-zh="園區｜池上客庄特色遊程" data-title-en="Park | Chishang Hakka Village Tour">
+<header class="bar"><a class="ib" href="../" data-zh-label="回首頁" data-en-label="Home" aria-label="回首頁"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5L12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg></a><div class="t serif" data-zh="池上客庄特色遊程" data-en="Chishang Hakka Village Tour">池上客庄特色遊程</div><button id="lang" class="lang" type="button">EN</button></header>
+<main>
+<div class="head" style="--c:#294534"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-7"/><path d="M12 14c-4 0-7-2.6-7-6.2C7.5 8 10 9.6 12 12c2-2.4 4.5-4 7-4.2C19 11.4 16 14 12 14z"/><path d="M12 12c0-3.4.8-6.2 2.6-8.6"/></svg></span><h2 class="serif" data-zh="園區" data-en="Park">園區</h2></div>
+<article class="stop" style="--c:#294534"><div class="ph"><img src="../img/s1.jpg" alt="" loading="lazy"><div class="nm serif"><span class="no">1</span><span data-zh="池上客家文化園區
+芙彤森境" data-en="Chishang Hakka Cultural Park
+Blueseeds Park">池上客家文化園區
+芙彤森境</span></div></div><div class="acts"><a class="act" href="https://www.facebook.com/profile.php?id=61576273720931" target="_blank" rel="noopener" data-ev="link" data-id="s1" data-name="池上客家文化園區（芙彤森境）" data-type="fb" aria-label="Facebook 粉絲專頁" data-zh-label="池上客家文化園區（芙彤森境） Facebook 粉絲專頁" data-en-label="Chishang Hakka Cultural Park Blueseeds Park Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1.1 1.1-1.1H17V2.3h-2.7C11.3 2.3 10.4 4.4 10.4 6.4v2.1H8v3.4h2.4V22H14V11.9h2.7l.4-3.4H14z"/></svg></a><a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Blueseeds%20Park%20%E8%8A%99%E5%BD%A4%E6%A3%AE%E5%A2%83%20%E8%87%BA%E6%9D%B1%E7%B8%A3%E6%B1%A0%E4%B8%8A%E9%84%89%E6%96%B0%E8%88%88%E6%9D%91%E6%96%B0%E5%85%89%E8%B7%AF1%E8%99%9F" target="_blank" rel="noopener" data-ev="link" data-id="s1" data-name="池上客家文化園區（芙彤森境）" data-type="map" aria-label="Google 地圖導航" data-zh-label="池上客家文化園區（芙彤森境） Google 地圖導航" data-en-label="Chishang Hakka Cultural Park Blueseeds Park Directions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 22s7-6.4 7-12a7 7 0 10-14 0c0 5.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg></a><a class="act" href="tel:+88689865038" data-ev="link" data-id="s1" data-name="池上客家文化園區（芙彤森境）" data-type="tel" aria-label="撥打電話" data-zh-label="池上客家文化園區（芙彤森境） 撥打電話" data-en-label="Chishang Hakka Cultural Park Blueseeds Park Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></svg></a></div></article>
+
+<p class="foot" data-zh="營業時間與預約方式以店家公告為準，出發前建議先來電確認。" data-en="Opening hours and bookings may change. Please call ahead before visiting.">營業時間與預約方式以店家公告為準，出發前建議先來電確認。</p>
+<p class="note" data-zh="本頁使用 Google Analytics 統計瀏覽次數" data-en="This page uses Google Analytics to count visits.">本頁使用 Google Analytics 統計瀏覽次數</p>
+</main>
+<script>
+(function(){
+  var KEY='chishangTourLang', lang='zh';
+  try{var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='zh'){lang=q;localStorage.setItem(KEY,q);}else{lang=localStorage.getItem(KEY)||'zh';}}catch(e){}
+  function apply(l){
+    document.documentElement.lang=(l==='en')?'en':'zh-Hant-TW';
+    document.querySelectorAll('[data-zh]').forEach(function(el){el.textContent=el.getAttribute('data-'+l);});
+    document.querySelectorAll('[data-zh-label]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+l+'-label'));});
+    var b=document.getElementById('lang');if(b){b.textContent=(l==='en')?'中文':'EN';b.setAttribute('aria-label',(l==='en')?'切換成中文':'Switch to English');}
+    document.title=document.body.getAttribute('data-title-'+l)||document.title;
+  }
+  apply(lang);
+  var b=document.getElementById('lang');
+  if(b){b.addEventListener('click',function(){lang=(lang==='en')?'zh':'en';try{localStorage.setItem(KEY,lang);}catch(e){}apply(lang);
+    if(window.gtag){gtag('event','tour_lang',{lang:lang});}});}
+  document.querySelectorAll('a[data-ev]').forEach(function(a){
+    a.addEventListener('click',function(){
+      if(!window.gtag)return;
+      if(a.getAttribute('data-ev')==='cat'){gtag('event','tour_category',{category:a.getAttribute('data-cat'),lang:lang});}
+      else{gtag('event','tour_link',{shop_id:a.getAttribute('data-id'),shop_name:a.getAttribute('data-name'),link_type:a.getAttribute('data-type'),lang:lang});}
+    });
+  });
+})();
+</script>
+</body>
+</html>
